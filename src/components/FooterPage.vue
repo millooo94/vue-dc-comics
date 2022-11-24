@@ -4,75 +4,87 @@
       <div class="container">
         <div class="block">
         <img src="@/img/buy-comics-digital-comics.png" alt="digital comics">
-        <span>DIGITAL COMICS</span>
+        <span><a href="">DIGITAL COMICS</a></span>
       </div>
       <div class="block">
         <img src="@/img/buy-comics-merchandise.png" alt="merchandise">
-        <span>DC MERCHANDISE</span>
+        <span><a href=""> DC MERCHANDISE</a></span>
       </div>
       <div class="block">
         <img src="@/img/buy-comics-subscriptions.png" alt="subscriptionS">
-        <span>SUBSCRIPTION</span>
+        <span><a href="">SUBSCRIPTION</a></span>
       </div>
       <div class="block">
         <img src="@/img/buy-comics-shop-locator.png" alt="shop locator">
-        <span>COMIC SHOP LOCATOR</span>
+        <span><a href="">COMIC SHOP LOCATOR</a></span>
       </div>
       <div class="block">
         <img src="@/img/buy-dc-power-visa.svg" alt="power visa">
-        <span>DC POWER VISA</span>
+        <span><a href="">DC POWER VISA</a></span>
       </div>
       </div>
     </section>
     <section class="background">
       <div class="blocks">
           <div class="left-block">
-          <h2>DC COMICS</h2>
           <ul>
-            <li>Characters</li>
-            <li>Comics</li>
-            <li>Movies</li>
-            <li>TV</li>
-            <li>Games</li>
-            <li>Videos</li>
-            <li>News</li>
+            <h2>DC COMICS</h2>
+            <li><a href="">Characters</a></li>
+            <li><a href="">Comics</a></li>
+            <li><a href="">Movies</a></li>
+            <li><a href="">TV</a></li>
+            <li><a href="">Games</a></li>
+            <li><a href="">Videos</a></li>
+            <li><a href="">News</a></li>
           </ul>
-          <h2>SHOP</h2>
           <ul>
-            <li>Shop DC</li>
-            <li>Shop DC collectibles</li>
+            <h2>SHOP</h2>
+            <li><a href="">Shop DC</a></li>
+            <li><a href="">Shop DC collectibles</a></li>
           </ul>
         </div>
         <div class="center-block">
-          <h2>DC</h2>
           <ul>
-            <li>Terms of use</li>
-            <li>Privacy Policy (New)</li>
-            <li>Ad Choices</li>
-            <li>Advertising</li>
-            <li>Jobs</li>
-            <li>Subscriptions</li>
-            <li>Talent Workshops</li>
-            <li>CPSC Certificates</li>
-            <li>Ratings</li>
-            <li>Shop Help</li>
-            <li>Contact Us</li>
+            <h2>DC</h2>
+            <li><a href="">Terms of use</a></li>
+            <li><a href="">Privacy Policy (New)</a></li>
+            <li><a href="">Ad Choices</a></li>
+            <li><a href="">Advertising</a></li>
+            <li><a href="">Jobs</a></li>
+            <li><a href="">Subscriptions</a></li>
+            <li><a href="">Talent Workshops</a></li>
+            <li><a href="">CPSC Certificates</a></li>
+            <li><a href="">Ratings</a></li>
+            <li><a href="">Shop Help</a></li>
+            <li><a href="">Contact Us</a></li>
           </ul>
         </div>
         <div class="right-block">
-          <h2>SITES</h2>
           <ul>
-            <li>DC</li>
-            <li>MAD Magazine</li>
-            <li>DC Kids</li>
-            <li>DC Universe</li>
-            <li>DC Power Visa</li>
+            <h2>SITES</h2>
+            <li><a href="">DC</a></li>
+            <li><a href="">MAD Magazine</a></li>
+            <li><a href="">DC Kids</a></li>
+            <li><a href="">DC Universe</a></li>
+            <li><a href="">DC Power Visa</a></li>
           </ul>
         </div>
       </div>
       <img src="@/img/dc-logo-bg.png" alt="">
     </section>
-    <section class="sub-footer"></section>
+    <section class="sub-footer">
+      <div class="container">
+        <button>SIGN-UP NOW!</button>
+      <div class="block-left">
+        <span>FOLLOW US</span>
+        <a href=""><img src="@/img/footer-facebook.png" alt="facebook"></a>
+        <a href=""><img src="@/img/footer-twitter.png" alt="twitter"></a>
+        <a href=""><img src="@/img/footer-youtube.png" alt="youtube"></a>
+        <a href=""><img src="@/img/footer-pinterest.png" alt="pinterest"></a>
+        <a href=""><img src="@/img/footer-periscope.png" alt="periscope"></a>
+      </div>
+      </div>
+    </section>
   </footer>
 </template>
 
@@ -83,15 +95,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-body {
-  position: relative;
-  z-index: 10;
-}
 .shop {
   background-color: #0282f9;
   padding: 2.5rem;
   .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
   display: flex;
   gap: 2.5rem;
@@ -109,35 +117,97 @@ body {
     }
     span {
       width: 80%;
-
+      font-size: .8rem;
+      color: white;
+      a {
+        text-decoration: none;
+        &:visited, &:hover, &:active {
+          color: inherit;
+        }
+      }
     }
   }
   }
 }
 .background {
-  display: flex;
+  position: relative;
+  overflow: hidden;
   gap: 10rem;
   background-image: url('@/img/footer-bg.jpg');
   background-size: cover;
+  padding: 2.5rem 0 4.5rem 4.5rem;
   .blocks {
     display: flex;
+    gap: 5rem;
+    font-size: .7rem;
+    color: white;
+    margin-left: 4rem;
     .left-block {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
+    ul {
+      list-style: none;
+      h2 {
+        margin-bottom: 1rem;
+      }
+      li {
+        color: #7f807b;
+        margin-bottom: .5rem;
+        a {
+        text-decoration: none;
+        &:visited, &:hover, &:active {
+          color: inherit;
+        }
+      }
+      }
+    }
   }
   img {
+    width: 40%;
     position: absolute;
-    top: 13rem;
-    left: 52rem;
-   overflow: hidden;
-
+    top: -6.5rem;
+    left: 50rem;
   }
 
 }
 .sub-footer {
-  height: 10rem;
-  background-color: black;
+  height: 5rem;
+  background-color:#303030;
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      height: fit-content;
+      padding: .6rem .8rem;
+      background-color: transparent;
+      border: 2px solid #0282f9;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    .block-left {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      a {
+        width: 9%;
+        img {
+          width: 100%;
+        }
+      }
+      span {
+        color: #0282f9;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-right: .5rem;
+      }
+    }
+  }
 }
 </style>

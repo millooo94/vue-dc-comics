@@ -5,16 +5,16 @@
         <img src="@/img/dc-logo.png" alt="dc-logo">
       </a>
       <ul>
-          <li>CHARACTERS</li>
-          <li>COMICS</li>
-          <li>MOVIE</li>
-          <li>TV</li>
-          <li>GAMES</li>
-          <li>COLLECTIBLES</li>
-          <li>VIDEOS</li>
-          <li>FANS</li>
-          <li>NEWS</li>
-          <li>SHOP</li>
+          <li><a href="">CHARACTERS</a></li>
+          <li><a href="">COMICS</a></li>
+          <li><a href="">MOVIE</a></li>
+          <li><a href="">TV</a></li>
+          <li><a href="">GAMES</a></li>
+          <li><a href="">COLLECTIBLES</a></li>
+          <li><a href="">VIDEOS</a></li>
+          <li><a href="">FANS</a></li>
+          <li><a href="">NEWS</a></li>
+          <li><a href="">SHOP</a></li>
         </ul>
     </nav>
   </header>
@@ -39,6 +39,7 @@ nav {
   a {
     width: 5%;
     img {
+      height: 100%;
       width: 100%;
     }
   }
@@ -49,13 +50,28 @@ nav {
     list-style: none;
     justify-content: space-between;
     font-size: .8rem;
+    font-weight: bold;
+    color: #464646; ;
     li {
+      position: relative;
       display: flex;
       align-items: center;
       height: 100%;
       padding: 2rem 0 2rem 0;
-      &:hover {
-        border-bottom: 4px solid blue;
+      &:hover::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: blue;
+      }
+      a {
+        text-decoration: none;
+        &:visited, &:hover, &:active {
+          color: inherit;
+        }
       }
     }
   }
