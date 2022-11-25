@@ -1,37 +1,48 @@
 <template>
   <header>
-    <nav>
+    <div class="navbar">
+      <nav>
       <a href="">
-        <img src="@/img/dc-logo.png" alt="dc-logo">
+        <img
+          src="@/img/dc-logo.png"
+          alt="dc-logo"
+        >
       </a>
       <ul>
-          <li><a href="">CHARACTERS</a></li>
-          <li><a href="">COMICS</a></li>
-          <li><a href="">MOVIE</a></li>
-          <li><a href="">TV</a></li>
-          <li><a href="">GAMES</a></li>
-          <li><a href="">COLLECTIBLES</a></li>
-          <li><a href="">VIDEOS</a></li>
-          <li><a href="">FANS</a></li>
-          <li><a href="">NEWS</a></li>
-          <li><a href="">SHOP</a></li>
-        </ul>
+        <li><a href="">CHARACTERS</a></li>
+        <li><a href="">COMICS</a></li>
+        <li><a href="">MOVIE</a></li>
+        <li><a href="">TV</a></li>
+        <li><a href="">GAMES</a></li>
+        <li><a href="">COLLECTIBLES</a></li>
+        <li><a href="">VIDEOS</a></li>
+        <li><a href="">FANS</a></li>
+        <li><a href="">NEWS</a></li>
+        <li><a href="">SHOP</a></li>
+      </ul>
     </nav>
+    </div>
+    <HeaderJumbotron />
   </header>
 </template>
 
 <script>
+import HeaderJumbotron from '@/components/HeaderJumbotron.vue';
+
 export default {
   name: 'HeaderPage',
+  components: {
+    HeaderJumbotron,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 header {
-  height: 6rem;
   background-color: white;
-}
-nav {
+  .navbar {
+    height: 5rem;
+    nav {
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -39,8 +50,9 @@ nav {
   a {
     width: 5%;
     img {
-      height: 100%;
       width: 100%;
+      height: 100%;
+      display: block;
     }
   }
   ul {
@@ -75,6 +87,8 @@ nav {
       }
     }
   }
-}
 
+  }
+}
+}
 </style>

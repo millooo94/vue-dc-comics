@@ -3,30 +3,45 @@
     <section class="shop">
       <div class="container">
         <div class="block">
-        <img src="@/img/buy-comics-digital-comics.png" alt="digital comics">
-        <span><a href="">DIGITAL COMICS</a></span>
-      </div>
-      <div class="block">
-        <img src="@/img/buy-comics-merchandise.png" alt="merchandise">
-        <span><a href=""> DC MERCHANDISE</a></span>
-      </div>
-      <div class="block">
-        <img src="@/img/buy-comics-subscriptions.png" alt="subscriptionS">
-        <span><a href="">SUBSCRIPTION</a></span>
-      </div>
-      <div class="block">
-        <img src="@/img/buy-comics-shop-locator.png" alt="shop locator">
-        <span><a href="">COMIC SHOP LOCATOR</a></span>
-      </div>
-      <div class="block">
-        <img src="@/img/buy-dc-power-visa.svg" alt="power visa">
-        <span><a href="">DC POWER VISA</a></span>
-      </div>
+          <img
+            src="@/img/buy-comics-digital-comics.png"
+            alt="digital comics"
+          >
+          <span><a href="">DIGITAL COMICS</a></span>
+        </div>
+        <div class="block">
+          <img
+            src="@/img/buy-comics-merchandise.png"
+            alt="merchandise"
+          >
+          <span><a href=""> DC MERCHANDISE</a></span>
+        </div>
+        <div class="block">
+          <img
+            src="@/img/buy-comics-subscriptions.png"
+            alt="subscriptionS"
+          >
+          <span><a href="">SUBSCRIPTION</a></span>
+        </div>
+        <div class="block">
+          <img
+            src="@/img/buy-comics-shop-locator.png"
+            alt="shop locator"
+          >
+          <span><a href="">COMIC SHOP LOCATOR</a></span>
+        </div>
+        <div class="block">
+          <img
+            src="@/img/buy-dc-power-visa.svg"
+            alt="power visa"
+          >
+          <span><a href="">DC POWER VISA</a></span>
+        </div>
       </div>
     </section>
     <section class="background">
       <div class="blocks">
-          <div class="left-block">
+        <div class="left-block">
           <ul>
             <h2>DC COMICS</h2>
             <li><a href="">Characters</a></li>
@@ -75,14 +90,37 @@
     <section class="sub-footer">
       <div class="container">
         <button>SIGN-UP NOW!</button>
-      <div class="block-left">
-        <span>FOLLOW US</span>
-        <a href=""><img src="@/img/footer-facebook.png" alt="facebook"></a>
-        <a href=""><img src="@/img/footer-twitter.png" alt="twitter"></a>
-        <a href=""><img src="@/img/footer-youtube.png" alt="youtube"></a>
-        <a href=""><img src="@/img/footer-pinterest.png" alt="pinterest"></a>
-        <a href=""><img src="@/img/footer-periscope.png" alt="periscope"></a>
-      </div>
+        <div class="block-left">
+          <span>FOLLOW US</span>
+          <a href="">
+            <img
+              src="@/img/footer-facebook.png"
+              alt="facebook"
+            >
+          </a>
+          <a href="">
+            <img
+              src="@/img/footer-twitter.png"
+              alt="twitter"
+            >
+          </a>
+          <a href=""><img
+            src="@/img/footer-youtube.png"
+            alt="youtube"
+          >
+          </a>
+          <a href="">
+            <img
+              src="@/img/footer-pinterest.png"
+              alt="pinterest"
+            >
+          </a>
+          <a href=""><img
+            src="@/img/footer-periscope.png"
+            alt="periscope"
+          >
+          </a>
+        </div>
       </div>
     </section>
   </footer>
