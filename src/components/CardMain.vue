@@ -27,7 +27,10 @@ img {
   object-position: 2px 5px;
 }
 .text {
+  max-width: 160px;
+  margin-top: .8rem;
   color: white;
+  font-size: .8rem;
 }
 
 </style>

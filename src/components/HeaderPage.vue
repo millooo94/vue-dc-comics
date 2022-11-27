@@ -1,27 +1,19 @@
 <template>
   <header>
-    <div class="navbar">
-      <nav>
-      <a href="">
-        <img
-          src="@/img/dc-logo.png"
-          alt="dc-logo"
-        >
-      </a>
-      <ul>
-        <li><a href="">CHARACTERS</a></li>
-        <li><a href="">COMICS</a></li>
-        <li><a href="">MOVIE</a></li>
-        <li><a href="">TV</a></li>
-        <li><a href="">GAMES</a></li>
-        <li><a href="">COLLECTIBLES</a></li>
-        <li><a href="">VIDEOS</a></li>
-        <li><a href="">FANS</a></li>
-        <li><a href="">NEWS</a></li>
-        <li><a href="">SHOP</a></li>
-      </ul>
+    <nav class="navbar">
+      <div class="container">
+        <a href="" class="img-link">
+          <img
+            src="@/img/dc-logo.png"
+            alt="dc-logo">
+        </a>
+        <ul>
+          <li v-for="item in arrNav" :key="item">
+            <a href="">{{ item }}</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    </div>
     <HeaderJumbotron />
   </header>
 </template>
@@ -34,61 +26,75 @@ export default {
   components: {
     HeaderJumbotron,
   },
+  data() {
+    return {
+      arrNav: [
+        'characters',
+        'comics',
+        'movie',
+        'TV',
+        'games',
+        'collectibles',
+        'videos',
+        'fans',
+        'news',
+        'shop',
+      ],
+    };
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-header {
+.navbar {
+  height: 5.5rem;
   background-color: white;
-  .navbar {
-    height: 5rem;
-    nav {
+}
+.container {
+  margin: auto;
+  max-width: 1200px;
   height: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  a {
-    width: 5%;
-    img {
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
-  }
-  ul {
+  justify-content: space-between;
+}
+.img-link {
+  height: 100%;
+  padding: .9rem;
+
+  img {
     height: 100%;
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    justify-content: space-between;
-    font-size: .8rem;
-    font-weight: bold;
-    color: #464646; ;
-    li {
-      position: relative;
-      display: flex;
-      align-items: center;
-      height: 100%;
-      padding: 2rem 0 2rem 0;
-      &:hover::before {
+  }
+}
+ul {
+  height: 100%;
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  gap: 2rem;
+  font-size: .8rem;
+  font-weight: bold;
+  color: #464646;
+  li {
+    height: 100%;
+    position: relative;
+    &:hover::before {
         content: '';
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
         height: 4px;
-        background: blue;
+        background: #0282f9;
       }
-      a {
-        text-decoration: none;
-        &:visited, &:hover, &:active {
-          color: inherit;
-        }
+    a {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      &:visited, &:hover, &:active {
+        color: inherit;
       }
     }
   }
-
-  }
-}
 }
 </style>

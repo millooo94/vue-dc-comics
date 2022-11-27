@@ -1,7 +1,6 @@
 <template>
   <main>
     <div class="container">
-      <div class="current-series">CURRENT SERIES</div>
       <CardMain
         v-for="objComics in Comics"
         :key="objComics.series"
@@ -34,27 +33,25 @@ export default {
 main {
   background-color: #1c1c1c;
   position: relative;
-
-  .container{
+}
+.container{
     margin: 0 auto;
     padding: 2.5rem 0 1rem 0;
     max-width: 1200px;
     display: flex;
+    row-gap: 2.8rem;
     flex-wrap: wrap;
-
-    .current-series {
-      background-color: blue;
-      position: absolute;
-      top: -2%;
-      padding: 1rem;
-    }
-    .card-comics {
-      flex: 0 0 calc(100% / 6);
-    }
-    button {
-      margin: auto;
-    }
   }
-}
+.card-comics {
+    flex: 0 0 calc(100% / 6);
+  }
 
+button {
+    margin: auto;
+    padding: .5rem 3.8rem;
+    font-size: .8rem;
+    font-weight: bold;
+    color: white;
+    background-color: #0282f9;
+  }
 </style>
